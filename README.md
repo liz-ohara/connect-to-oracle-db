@@ -33,30 +33,39 @@ Download the Basic 64-bit DMG from [Oracle Technology Network](https://www.oracl
 
 4. Install Oracle Instant Client (Scripted installation). Open the terminal and run the following commands:
 ```
-cd $HOME/Downloads
+cd $HOME/Desktop
 curl -O https://download.oracle.com/otn_software/mac/instantclient/198000/instantclient-basic-macos.x64-19.8.0.0.0dbru.dmg
 hdiutil mount instantclient-basic-macos.x64-19.8.0.0.0dbru.dmg
 /Volumes/instantclient-basic-macos.x64-19.8.0.0.0dbru/install_ic.sh
 hdiutil unmount /Volumes/instantclient-basic-macos.x64-19.8.0.0.0dbru
 ```
 
-_The Instant Client directory will be $HOME/Downloads/instantclient_19_8._
+_The Instant Client directory will be $HOME/Desktop/instantclient_19_8._
 
-_Applications may not have access to the Downloads directory, so you should move Instant Client somewhere convenient._
+_Applications may not have access to specific folders (like the Downloads directory), so pick a path to place Instant Client that is convenient._
 
 5. Configure Instant Client
-Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in index.js):
+Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantClient.js):
 ```
 const oracledb = require('oracledb');
+const fs = require('fs');
 try {
-  oracledb.initOracleClient({libDir: **'/Users/your_username/Downloads/instantclient_19_8'**});
-} catch (err) {
-  console.error('Whoops!');
+  let libPath;
+  if (process.platform === 'win32') {           // Windows
+    libPath = 'C:\\oracle\\instantclient_19_12';
+  } else if (process.platform === 'darwin') {   // macOS
+    libPath = process.env.HOME + '/Desktop/instantclient_19_8';
+  }
+  if (libPath && fs.existsSync(libPath)) {
+    oracledb.initOracleClient({ libDir: libPath });
+  }
+}
+catch (err) {
   console.error(err);
   process.exit(1);
 }
 ```
-_If you did not place Instant Client in your Downloads folder, change the file path._
+_If you did not place Instant Client in your Desktop folder, change the file path._
 
 6. Edit dbconfig.js and set the database credentials to your environment, for example:
 ```
@@ -86,19 +95,26 @@ Download the free 64-bit Instant Client Basic ZIP file from [Oracle Technology N
 For example unzip instantclient-basic-windows.x64-19.11.0.0.0dbru.zip to C:\oracle\instantclient_19_11.
 
 5. Configure Instant Client
-Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in index.js):
+Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantClient.js):
 ```
 const oracledb = require('oracledb');
+const fs = require('fs');
 try {
-  oracledb.initOracleClient({libDir: **'/Users/your_username/Downloads/instantclient_19_8'**});
-} catch (err) {
-  console.error('Whoops!');
+  let libPath;
+  if (process.platform === 'win32') {           // Windows
+    libPath = 'C:\\oracle\\instantclient_19_12';
+  } else if (process.platform === 'darwin') {   // macOS
+    libPath = process.env.HOME + '/Desktop/instantclient_19_8';
+  }
+  if (libPath && fs.existsSync(libPath)) {
+    oracledb.initOracleClient({ libDir: libPath });
+  }
+}
+catch (err) {
   console.error(err);
   process.exit(1);
 }
 ```
-_If you did not place Instant Client in your Downloads folder, change the file path._
-
 6. Edit dbconfig.js and set the database credentials to your environment, for example:
 ```
 module.exports = {
