@@ -77,6 +77,9 @@ module.exports = {
   connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mymachine.example.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)))"
 };
 ```
+_For Villanova students, connectString should be:
+connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=CSDB.csc.villanova.edu)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=orcl)))"_
+
 7. Run one of the examples, such as seeListings.js:
 ```
 node seeListings.js 
@@ -117,7 +120,7 @@ catch (err) {
   process.exit(1);
 }
 ```
-_If you did not unzip Instant Client to C:\oracle\instantclient_19_1 you need to update the directory._
+_If you did not unzip Instant Client to C:\oracle\instantclient_19_1, you need to update the directory._
 
 6. Edit dbconfig.js and set the database credentials to your environment, for example:
 ```
@@ -129,7 +132,6 @@ module.exports = {
 ```
 _For Villanova students, connectString should be:
 connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=CSDB.csc.villanova.edu)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=orcl)))"_
- 
 
 7. Run one of the examples, such as seeListings.js:
 ```
