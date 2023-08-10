@@ -5,6 +5,11 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 2. Download NodeJS and connect it to OracleDB locally.
 3. Run the app.
 
+## Important notes
+1. Never commit your username and password in dbconfig.js to the remote repository.
+2. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
+3. If the DB connection is not working, make sure you are on VPN or Villanova wifi.
+
 ## Clone the repository
 1. On GitHub.com, navigate to the main page of the repository.
 2. Above the list of files, click <> Code.
@@ -153,10 +158,6 @@ npm install body-parser
 5. Open a new terminal in Visual Studio Code and run "npm start." The console should read "Server started at http://localhost:8080" and
 "Oracle connection established" if both the UI has been served locally and the Oracle connection is successfully established.
 7. Open http://localhost:8080 and you should see the UI of your application load.
-
-## Important notes
-1. Never commit your username and password in dbconfig.js to the remote repository.
-2. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
 
 ## Set Up a Simple Node Server Project
 https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09
