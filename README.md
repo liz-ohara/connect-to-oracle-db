@@ -45,6 +45,7 @@ _The Instant Client directory will be $HOME/Desktop/instantclient_19_8._
 _Applications may not have access to specific folders (like the Downloads directory), so pick a path to place Instant Client that is convenient._
 
 5. Configure Instant Client
+
 Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantClient.js):
 ```
 const oracledb = require('oracledb');
