@@ -156,7 +156,7 @@ npm install body-parser
 
 ## Important notes
 1. Never commit your username and password in dbconfig.js to the remote repository.
-2. If you make changes to server.js, re-run "npm start" to load those changes.
+2. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
 
 ## Set Up a Simple Node Server Project
 https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09
