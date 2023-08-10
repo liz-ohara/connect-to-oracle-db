@@ -19,6 +19,7 @@ If you're signing in to GitHub from Visual Studio for the first time, you may ne
 
 ## To download nodejs and connect it to OracleDB locally
 Set-Up Help: https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html
+
 Connection String Help: https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#connectionstrings
 
 ### ON MAC 
@@ -116,6 +117,8 @@ catch (err) {
   process.exit(1);
 }
 ```
+_If you did not unzip Instant Client to C:\oracle\instantclient_19_1 you need to update the directory._
+
 6. Edit dbconfig.js and set the database credentials to your environment, for example:
 ```
 module.exports = {
