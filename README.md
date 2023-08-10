@@ -124,6 +124,10 @@ module.exports = {
   connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=mymachine.example.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)))"
 };
 ```
+_For Villanova students, connectString should be:
+connectString : "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=CSDB.csc.villanova.edu)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=orcl)))"_
+ 
+
 7. Run one of the examples, such as seeListings.js:
 ```
 node seeListings.js
