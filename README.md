@@ -46,7 +46,7 @@ _Applications may not have access to specific folders (like the Downloads direct
 
 5. Configure Instant Client
 
-Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantClient.js):
+Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantclient.js):
 ```
 const oracledb = require('oracledb');
 const fs = require('fs');
@@ -96,7 +96,7 @@ Download the free 64-bit Instant Client Basic ZIP file from [Oracle Technology N
 For example unzip instantclient-basic-windows.x64-19.11.0.0.0dbru.zip to C:\oracle\instantclient_19_11.
 
 5. Configure Instant Client
-Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantClient.js):
+Tell node-oracledb where your Oracle Client libraries are by updating the following file path (in instantclient.js):
 ```
 const oracledb = require('oracledb');
 const fs = require('fs');
