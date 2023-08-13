@@ -10,6 +10,7 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 3. Never commit your username and password in dbconfig.js to the remote repository.
 4. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
 5. If the DB connection is not working, make sure you are on VPN or Villanova Wi-Fi.
+6. Canges in Visual Studio Code are not automatically saved in the remote repository. There are a lot of resources online about working with git commands through Visual Studio Code. You can also make branches to collaborate with teammates.
 
 ## Clone the repository
 1. On GitHub.com, navigate to the main page of the connect-to-oracle-db repository.
@@ -170,6 +171,7 @@ npm install body-parser
 7. Open http://localhost:8080 and you should see the UI of your application load.
 
 [Working with git in Visual Studio Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+
 [Git Remote: Synching local changes with remote repository](https://www.atlassian.com/git/tutorials/syncing)
 
 ## Helpful Links
