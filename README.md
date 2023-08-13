@@ -28,7 +28,11 @@ git remote set-url origin <url-of-new-repo>
 git push origin master
 ```
 
-Note: If you're signing in to GitHub from Visual Studio for the first time, you may need to authorize your account by entering your username and password.
+Note: If you're signing in to GitHub from Visual Studio for the first time, you may need to authorize your account by configuring your username and password before pushing and pulling changes. Run each of these lines individually in the Visual Studio Code terminal. When you run git commit or git push, it may ask you to verify your account.
+```
+git config --global user.email your-github-account-email@gmail.com
+git config --global user.name your-github-account-username
+```
 
 [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
 
