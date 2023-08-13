@@ -5,7 +5,7 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 2. Download NodeJS and connect it to OracleDB locally.
 3. Run the app.
 
-**Sign in to GitHub to use this repository as a template**
+_**Sign in to GitHub to use this repository as a template**_
 
 ## Important notes
 1. Never commit your username and password in dbconfig.js to the remote repository.
@@ -14,6 +14,7 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 4. Canges in Visual Studio Code are not automatically saved in the remote repository. There are a lot of resources online about working with git commands through Visual Studio Code. You can also make branches to collaborate with teammates.
 
 ## Clone the repository
+_**Sign in to GitHub to use this repository as a template**_
 1. On GitHub.com, navigate to the [main page of the connect-to-oracle-db repository](https://github.com/liz-ohara/connect-to-oracle-db).
 2. Click the "Use this template" dropdown.
 3. Click "Create a new repository."
