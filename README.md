@@ -6,7 +6,7 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 3. Run the app.
 
 ## Important notes
-1. YOU CANNOT MAKE CHANGES TO THIS REPOSITORY. You may clone this repository, but you must make your own repository and then change the URL to push changes. (Steps outlined in the "Clone the repository" section.)
+1. **YOU CANNOT MAKE CHANGES TO THIS REPOSITORY**. You may clone this repository, but you must make your own repository and then change the URL to push changes. (Steps outlined in the "Clone the repository" section.)
 3. Never commit your username and password in dbconfig.js to the remote repository.
 4. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
 5. If the DB connection is not working, make sure you are on VPN or Villanova Wi-Fi.
@@ -158,8 +158,8 @@ node seeListings.js
 ## To run the project
 1. Ensure the bike rental database is created in SQLDeveloper on your Villanova repository. See the "create bike db" folder for the SQL and inserts.
 2. Ensure the repository is cloned in Visual Studio Code and Oracle Instant Client is downloaded. Follow the sections above to do so.
-3. Open the dbconfig.js file and enter your Oracle username and password
-4. You may need to install the following libraries in the terminal (and any others that throw errors). **This only needs to be done one time.**
+4. Open the dbconfig.js file and enter your Oracle username and password
+5. You may need to install the following libraries in the terminal (and any others that throw errors). **This only needs to be done one time.**
 ```
 npm install express
 npm install body-parser
