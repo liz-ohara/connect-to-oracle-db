@@ -162,8 +162,6 @@ node seeListings.js
 ```
 npm install express
 
-npm install express-session
-
 npm install body-parser
 ```
 4. Make sure you are on the Villanova network, or connect to the VPN before starting the program.
@@ -171,5 +169,11 @@ npm install body-parser
 "Oracle connection established" if both the UI has been served locally and the Oracle connection is successfully established.
 7. Open http://localhost:8080 and you should see the UI of your application load.
 
-## Set Up a Simple Node Server Project
-https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09
+[Working with git in Visual Studio Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+[Git Remote: Synching local changes with remote repository](https://www.atlassian.com/git/tutorials/syncing)
+
+## Helpful Links
+1. [Set Up a Simple Node Server Project](https://levelup.gitconnected.com/set-up-and-run-a-simple-node-server-project-38b403a3dc09)
+2. [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
+3. [Changing a remote repository's URL](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url)
+4. [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
