@@ -5,6 +5,8 @@ Establishes a connection to the Oracle database and sets up sample routing for l
 2. Download NodeJS and connect it to OracleDB locally.
 3. Run the app.
 
+**Sign in to GitHub to use this repository as a template**
+
 ## Important notes
 1. Never commit your username and password in dbconfig.js to the remote repository.
 2. If you make changes to server.js, kill the terminal and re-run "npm start" to load those changes.
