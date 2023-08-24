@@ -47,7 +47,7 @@ Connection String Help: https://node-oracledb.readthedocs.io/en/latest/user_guid
 npm install oracledb
 ```
 3. Install the free Oracle Instant Client ‘Basic’ package.
-Download the Basic 64-bit DMG from [Oracle Technology Network](https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html)
+Download the Basic 64-bit DMG from [Oracle Technology Network](https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html)
 
 4. Install Oracle Instant Client (Scripted installation). Open the terminal and run the following commands:
 ```
